@@ -1,0 +1,45 @@
+body{
+	background-color: grey;
+	margin: 0;
+}
+
+aside{
+	float: right;
+}
+
+header h1{
+	background: yellow;
+	text-align: right;
+}
+
+nav li{
+	padding-top: 20px;
+	color: white;
+	background: black;
+}
+
+nav{
+	padding: 5px;
+	background: green;
+}
+
+li{
+	display: inline;
+}
+
+li a{
+	padding: 20px;
+	background: black;
+	color: white;
+}
+
+#content li{
+	text-align: center;
+	display: block;
+}
+
+
+
+footer{
+	background: green;
+}
