@@ -58,11 +58,12 @@ aside{
 	float: right;
 	display: inline;
 	width: 25%;
+	height: 513px;
 	background-color: white;
 	background-image: url("http://www.literarygenius.info/images/william-shakespeare.jpg");
-	background-size: 100%;
-	background-repeat: none;
-	background-position: block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 aside > li{
