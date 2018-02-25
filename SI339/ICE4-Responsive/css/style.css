@@ -222,4 +222,35 @@ footer p{
 	.top-nav ul li{
 		display: inline-block;
 	}
+	.top-nav ul{
+      display: flex;
+    float: right;
+  	}
+
+  	.top-nav ul li, .menu-icon{
+  		border: none;
+  	}
+
+	.logo{
+		float: left;
+	}
+	  
+	#main-content{
+		margin-top: 50px;
+	}
+
+	/*-----IMAGES PAGE ------*/
+	.photo-cell{
+		display: inline;
+	}
+	.photo-cell img{
+		display: inline;
+		max-width: 40%;
+	}
+	
+	#alterthis{
+	    display:inline;
+	    max-width: 19%;
+	    /* vertical-align: left; */
+	}
 }

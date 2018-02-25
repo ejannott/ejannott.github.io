@@ -7,6 +7,20 @@
 	.top-nav ul li{
 		display: inline-block;
 	}
+
+	.maincontent {
+		margin-top: 100px;
+	}
+
+	.photo-cell{
+		display: inline;
+	}
+
+	#alterthis{
+		display:inline;
+    	max-width: 46%;
+    	margin-top: 20px;
+	}
 }
 
 @media only screen and (min-width: 1000px){
