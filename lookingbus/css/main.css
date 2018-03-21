@@ -3,5 +3,5 @@ body {
 }
 
 div {
-	visibility: hidden;
+	display: none;
 }
