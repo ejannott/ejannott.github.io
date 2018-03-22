@@ -9,10 +9,29 @@
 </head>
 <body>
 
-	<img src="img/home.png" usemap="#image-map">
+	<img src="img/home.png" id="dynamic_image" usemap="#image-map">
 	<map name="image-map">
-    	<area target="" alt="saves locations. button" title="saves locations. button" href="page2.html" coords="511,240,690,479" shape="rect">
+	    <area target="" alt="navigate to home" title="navigate to home" href="homeRoute.html" coords="31,239,213,480" shape="rect">
+	    <area target="" alt="navigate to work" title="navigate to work" href="workRoute.html" coords="276,232,451,475" shape="rect">
+	    <area target="" alt="saved locations" title="saved locations" href="favorites-dist.html" coords="511,240,690,479" shape="rect">
 	</map>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
 	
 </body>
 </html>
