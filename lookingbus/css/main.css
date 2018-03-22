@@ -5,3 +5,7 @@ body {
 div {
 	text-indent: -10000px;
 }
+
+img {
+	width: 100%;
+}
