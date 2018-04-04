@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LookingBus App</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+
+</head>
+<body>
+
+	<!-- Insert image stuff below -->
+	<img src="img/reserverideLONG.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="collapse route details" title="collapse route details" href="reserverideSHORT.html" coords="280,1556,963,1703" shape="rect">
+    <area target="" alt="Washtenaw and South University. stop" title="Washtenaw and South University. stop" href="#" coords="262,1989,1340,2076" shape="rect">
+    <area target="" alt="Washtenaw and Hill street. stop" title="Washtenaw and Hill street. stop" href="#" coords="282,2142,896,2225" shape="rect">
+    <area target="" alt="Washtenaw and Cambridge road. stop" title="Washtenaw and Cambridge road. stop" href="#" coords="270,2258,1207,2359" shape="rect">
+    <area target="" alt="list of 23 other bus stops." title="list of 23 other bus stops." href="#" coords="250,2420,1389,5289" shape="rect">
+    <area target="" alt="Ypsilanti transit center at 6:48 PM" title="Ypsilanti transit center at 6:48 PM" href="#" coords="120,5349,1413,5492" shape="rect">
+    <area target="" alt="1 minute walk" title="1 minute walk" href="#" coords="112,5567,1383,5717" shape="rect">
+    <area target="" alt="Arrive at destination, 220 Peal Street, at 6:49 PM" title="Arrive at destination, 220 Peal Street, at 6:49 PM" href="#" coords="92,5814,1421,5956" shape="rect">
+    <area target="" alt="Tap to schedule trip" title="Tap to schedule trip" href="reminderscreen.html" coords="86,6148,1385,6405" shape="rect">
+</map>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
+	
+</body>
+</html>

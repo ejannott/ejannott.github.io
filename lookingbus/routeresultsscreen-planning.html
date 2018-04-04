@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LookingBus App</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+
+</head>
+<body>
+
+	<!-- Insert image stuff below -->
+	<img src="img/routeresultsscreen-planning.png" usemap="#image-map">
+
+<map name="image-map">
+
+	<area target="" alt="back" title="back" href="home-filledin.html" coords="52,72,165,184" shape="rect">
+    <area target="" alt="From current location. tap to change" title="From current location. tap to change" href="input_origin.html" coords="58,341,1253,489" shape="rect">
+    <area target="" alt="search for bus to ypsilanti transit center. tap to change." title="search for bus to ypsilanti transit center. tap to change." href="input_destination.html" coords="62,553,1255,723" shape="rect">
+    <area target="" alt="swap origin and destination" title="swap origin and destination" href="#" coords="1290,483,1369,604" shape="rect">
+    <area target="" alt="Depart at 6:15 PM today. Tap to change." title="Depart at 6:15 PM today. Tap to change." href="timeoption-leavelater.html" coords="70,854,1401,961" shape="rect">
+    <area target="" alt="A A T A route 4. 6:18 PM Departure. 0.5 miles of walking. Arrival at 6:49 PM" title="A A T A route 4. 6:18 PM Departure. 0.5 miles of walking. Arrival at 6:49 PM" href="reserverideSHORT.html" coords="60,1182,1381,1740" shape="rect">
+    <area target="" alt="A A T A route 6. 6:48 PM Departure. 0.9 miles of walking. Arrival at 8:14 PM" title="A A T A route 6. 6:48 PM Departure. 0.9 miles of walking. Arrival at 8:14 PM" href="#" coords="56,1757,1385,2317" shape="rect">
+    <area target="" alt="Rain safe route! Michigan commuter south and A A T A route 6. 6:18 PM Departure. 0.2 miles of walking. 8:30 PM Arrival time." title="Rain safe route! Michigan commuter south and A A T A route 6. 6:18 PM Departure. 0.2 miles of walking. 8:30 PM Arrival time." href="#" coords="42,2456,1381,3344" shape="rect">
+    <area target="" alt="Less walking route. Michigan commuter south and A A T A route 6. 6:18 PM Departure. 0.2 miles of walking. 8:30 PM Arrival time." title="Less walking route. Michigan commuter south and A A T A route 6. 6:18 PM Departure. 0.2 miles of walking. 8:30 PM Arrival time." href="#" coords="64,3497,1393,4413" shape="rect">
+
+    
+</map>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
+	
+</body>
+</html>

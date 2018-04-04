@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LookingBus App</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+
+</head>
+<body>
+
+	<!-- Insert image stuff below -->
+	<img src="img/reserverideSHORT.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="back" title="back" href="routeresultsscreen-planning.html" coords="46,76,175,196" shape="rect">
+    <area target="" alt="review your ride!" title="review your ride!" href="#" coords="224,81,773,203" shape="rect">
+    <area target="" alt="From 777 North University Avenue, Ann Arbor Michigan 48104" title="From 777 North University Avenue, Ann Arbor Michigan 48104" href="#" coords="60,410,1314,644" shape="rect">
+    <area target="" alt="To Ypsilanti Transit Center" title="To Ypsilanti Transit Center" href="#" coords="84,711,1344,877,52,998,1401,1225" shape="0">
+    <area target="" alt="leave at 6:18 PM. Arrive 31 minutes later at 6:49PM" title="leave at 6:18 PM. Arrive 31 minutes later at 6:49PM" href="#" coords="78,1002,1405,1222" shape="0">
+    <area target="" alt="Your trip. 5 minute walk to stop." title="Your trip. 5 minute walk to stop." href="#" coords="78,1273,1377,1490" shape="rect">
+    <area target="" alt="A A T A arrives at Central Campus Transi Center at 6:28pm" title="A A T A arrives at Central Campus Transi Center at 6:28pm" href="#" coords="268,1569,1413,1713" shape="rect">
+    <area target="" alt="Your Driver will be Sara K." title="Your Driver will be Sara K." href="#" coords="759,1719,1104,1802" shape="rect">
+    <area target="" alt="26 stops before ypsilanti transit center. Tap to expand route." title="26 stops before ypsilanti transit center. Tap to expand route." href="reserverideLONG.html" coords="280,1888,1407,2218" shape="rect">
+    <area target="" alt="1 minute walk" title="1 minute walk" href="#" coords="86,2301,631,2455" shape="rect">
+    <area target="" alt="6:49 PM arrival at 220 Pearl Street" title="6:49 PM arrival at 220 Pearl Street" href="#" coords="62,2561,1411,2708" shape="rect">
+    <area target="" alt="Tap to schedule trip" title="Tap to schedule trip" href="reminderscreen.html" coords="100,2920,1324,3138" shape="rect">
+</map>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
+	
+</body>
+</html>

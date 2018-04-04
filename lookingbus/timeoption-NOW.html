@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LookingBus App</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+
+</head>
+<body>
+
+	<!-- Insert image stuff below -->
+	<img src="img/timeoption-NOW.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="time options. leave now selected!" title="time options. leave now selected!" href="#" coords="118,813,1187,1167" shape="rect">
+    <area target="" alt="Leave at. tap to enter time. " title="Leave at. tap to enter time. " href="timeoption-leavelater.html" coords="110,1204,603,1336" shape="rect">
+    <area target="" alt="Arrive by a time. tap to enter time." title="Arrive by a time. tap to enter time." href="timeoption-arriveby.html" coords="112,1365,595,1503" shape="rect">
+    <area target="" alt="done." title="done." href="routeresultsscreen-NOWresults.html" coords="534,1676,918,1821" shape="rect">
+    <area target="" alt="back." title="back." href="routeresultsscreen-NOWresults.html" coords="26,1875,1417,4490" shape="rect">
+</map>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
+	
+</body>
+</html>
