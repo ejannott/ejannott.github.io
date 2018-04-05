@@ -2,126 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
 
 
-
-/*STUFF FOR SLIDERS BELOW*/
-/*STUFF FOR SLIDERS BELOW*/
-/*STUFF FOR SLIDERS BELOW*/
-
-
-
-* {box-sizing:border-box}
-
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 600px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-    align-content: center;
-    height:170px
-    width:auto;/*maintain aspect ratio*/
-    max-width:600px;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
-
-/*STUFF FOR SLIDERS ABOVE*/
-/*STUFF FOR SLIDERS ABOVE*/
-/*STUFF FOR SLIDERS ABOVE*/
-/*STUFF FOR SLIDERS ABOVE*/
-/*STUFF FOR SLIDERS ABOVE*/
-/*STUFF FOR SLIDERS ABOVE*/
-
-
-
-
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1892,32 +1772,32 @@
 	}
 
 	input, select, textarea {
-		color: #e5474b;
+		color: #133c7f;
 	}
 
 	a {
-		color: #e5474b;
+		color: #133c7f;
 	}
 
 	strong, b {
-		color: #e5474b;
+		color: #133c7f;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #e5474b;
+		color: #133c7f;
 	}
 
 	blockquote {
-		border-left-color: #e5474b;
+		border-left-color: #133c7f;
 	}
 
 	code {
 		background: none;
-		border-color: #e5474b;
+		border-color: #133c7f;
 	}
 
 	hr {
-		border-bottom-color: #e5474b;
+		border-bottom-color: #133c7f;
 	}
 
 /* Box */
@@ -1942,7 +1822,7 @@
 		}
 
 	.box {
-		border-color: #e5474b;
+		border-color: #133c7f;
 	}
 
 /* Button */
@@ -2072,8 +1952,8 @@
 		button.alt,
 		.button.alt {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 2px #e5474b;
-			color: #e5474b !important;
+			box-shadow: inset 0 0 0 2px #133c7f;
+			color: #133c7f !important;
 		}
 
 			input[type="submit"].alt:hover,
@@ -2105,7 +1985,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #e5474b;
+			background-color: #133c7f;
 			color: #ffffff !important;
 		}
 
@@ -2347,7 +2227,7 @@
 	}
 
 	label {
-		color: #e5474b;
+		color: #133c7f;
 	}
 
 	input[type="text"],
@@ -2364,12 +2244,12 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #e5474b;
-			box-shadow: 0 0 0 1px #e5474b;
+			border-color: #133c7f;
+			box-shadow: 0 0 0 1px #133c7f;
 		}
 
 	.select-wrapper:before {
-		color: #e5474b;
+		color: #133c7f;
 	}
 
 	input[type="checkbox"] + label,
@@ -2380,20 +2260,20 @@
 		input[type="checkbox"] + label:before,
 		input[type="radio"] + label:before {
 			background: none;
-			border-color: #e5474b;
+			border-color: #133c7f;
 		}
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #e5474b;
-		border-color: #e5474b;
+		background-color: #133c7f;
+		border-color: #133c7f;
 		color: #ffffff;
 	}
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #e5474b;
-		box-shadow: 0 0 0 1px #e5474b;
+		border-color: #133c7f;
+		box-shadow: 0 0 0 1px #133c7f;
 	}
 
 	::-webkit-input-placeholder {
@@ -2629,7 +2509,7 @@
 		}
 
 	ul.alt li {
-		border-top-color: #e5474b;
+		border-top-color: #133c7f;
 	}
 
 /* Section/Article */
@@ -2743,7 +2623,7 @@
 			}
 
 	table tbody tr {
-		border-color: #e5474b;
+		border-color: #133c7f;
 	}
 
 		table tbody tr:nth-child(2n + 1) {
@@ -2751,19 +2631,19 @@
 		}
 
 	table th {
-		color: #e5474b;
+		color: #133c7f;
 	}
 
 	table thead {
-		border-bottom-color: #e5474b;
+		border-bottom-color: #133c7f;
 	}
 
 	table tfoot {
-		border-top-color: #e5474b;
+		border-top-color: #133c7f;
 	}
 
 	table.alt tbody tr td {
-		border-color: #e5474b;
+		border-color: #133c7f;
 	}
 
 /* Wrapper */
@@ -2778,7 +2658,7 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #e5474b;
+			background-color: #133c7f;
 			color: #f2a3a5;
 		}
 
@@ -2880,7 +2760,7 @@
 				.wrapper.style1 button.special,
 				.wrapper.style1 .button.special {
 					background-color: #ffffff;
-					color: #e5474b !important;
+					color: #133c7f !important;
 				}
 
 			.wrapper.style1 label {
@@ -2924,7 +2804,7 @@
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background-color: #ffffff;
 				border-color: #ffffff;
-				color: #e5474b;
+				color: #133c7f;
 			}
 
 			.wrapper.style1 input[type="checkbox"]:focus + label:before,
@@ -2995,7 +2875,7 @@
 			}
 
 			.wrapper.style2 a {
-				color: #e5474b;
+				color: #133c7f;
 			}
 
 			.wrapper.style2 strong, .wrapper.style2 b {
@@ -3067,7 +2947,7 @@
 				.wrapper.style2 input[type="button"].special,
 				.wrapper.style2 button.special,
 				.wrapper.style2 .button.special {
-					background-color: #e5474b;
+					background-color: #133c7f;
 					color: #ffffff !important;
 				}
 
@@ -3105,8 +2985,8 @@
 				.wrapper.style2 input[type="email"]:focus,
 				.wrapper.style2 select:focus,
 				.wrapper.style2 textarea:focus {
-					border-color: #e5474b;
-					box-shadow: 0 0 0 1px #e5474b;
+					border-color: #133c7f;
+					box-shadow: 0 0 0 1px #133c7f;
 				}
 
 			.wrapper.style2 .select-wrapper:before {
@@ -3126,15 +3006,15 @@
 
 			.wrapper.style2 input[type="checkbox"]:checked + label:before,
 			.wrapper.style2 input[type="radio"]:checked + label:before {
-				background-color: #e5474b;
-				border-color: #e5474b;
+				background-color: #133c7f;
+				border-color: #133c7f;
 				color: #ffffff;
 			}
 
 			.wrapper.style2 input[type="checkbox"]:focus + label:before,
 			.wrapper.style2 input[type="radio"]:focus + label:before {
-				border-color: #e5474b;
-				box-shadow: 0 0 0 1px #e5474b;
+				border-color: #133c7f;
+				box-shadow: 0 0 0 1px #133c7f;
 			}
 
 			.wrapper.style2 ::-webkit-input-placeholder {
@@ -3249,15 +3129,14 @@
 			left: 0;
 			line-height: inherit;
 			margin: 0;
-			padding: 12;
 			position: absolute;
 			top: 0;
-			color: #e5474b;
+			color: #133c7f;
 			font-size: 1.75em;
 			text-transform: none;
 			font-weight: normal;
-			padding: 0;
-			height: 70px;
+			padding: 10PX;
+			height: 80px;
 		}
 
 			#header .logo:hover {
@@ -3478,7 +3357,7 @@
 /* Banner */
 
 	#banner {
-		background-color: #e5474b;
+		background-color: #133c7f;
 		color: #f2a3a5;
 		padding: 13em 0 11em 0;
 		background-color: #0c0c0c;
@@ -3490,18 +3369,6 @@
 		position: relative;
 		z-index: 9999;
 	}
-
-		#banner input, #banner select, #banner textarea {
-			color: #ffffff;
-		}
-
-		#banner a {
-			color: #ffffff;
-		}
-
-		#banner strong, #banner b {
-			color: #ffffff;
-		}
 
 		#banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
 			color: #fff;
@@ -3585,7 +3452,7 @@
 			#banner button.special,
 			#banner .button.special {
 				background-color: #ffffff;
-				color: #e5474b !important;
+				color: #133c7f !important;
 			}
 
 		#banner:after {
@@ -3707,7 +3574,7 @@
 			}
 
 		}
-
+		/*CHANGE SCREEN PADDING FOR MEDIUM SCREEN*/
 		@media screen and (max-width: 736px) {
 
 			#one {
@@ -3790,80 +3657,14 @@
 
 		}
 
-	#three {
-		padding: 6em 0 4em 0;
-	}
-
-		#three .inner {
-			display: -ms-flexbox;
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-flex-direction: row;
-			-webkit-flex-direction: row;
-			-ms-flex-direction: row;
-			flex-direction: row;
-			-moz-justify-content: space-between;
-			-webkit-justify-content: space-between;
-			-ms-justify-content: space-between;
-			justify-content: space-between;
-			-ms-flex-pack: justify;
-		}
-
-			#three .inner article {
-				width: 26%;
-				display: block;
-			}
-
-				#three .inner article p {
-					color: #717171;
-				}
-
-				#three .inner article .icon {
-					color: #b3b3b3;
-					font-size: 3em;
-				}
-
-			@media screen and (max-width: 980px) {
-
-				#three .inner {
-					-moz-flex-direction: column;
-					-webkit-flex-direction: column;
-					-ms-flex-direction: column;
-					flex-direction: column;
-				}
-
-					#three .inner article {
-						width: 100%;
-						margin: 0 auto;
-					}
-
-			}
-
-		@media screen and (max-width: 980px) {
-
-			#three {
-				padding: 4em 0 2em 0;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#three {
-				padding: 2em 0 0.1em 0;
-			}
-
-		}
 
 /* Footer */
 
 	#footer {
-		background-color: #e5474b;
+		background-color: #133c7f;
 		color: #f2a3a5;
 		padding: 4em 0 2em 0;
-		background: #e5474b;
+		background: #133c7f;
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -3960,7 +3761,7 @@
 			#footer button.special,
 			#footer .button.special {
 				background-color: #ffffff;
-				color: #e5474b !important;
+				color: #133c7f !important;
 			}
 
 		#footer label {
@@ -4004,7 +3805,7 @@
 		#footer input[type="radio"]:checked + label:before {
 			background-color: #ffffff;
 			border-color: #ffffff;
-			color: #e5474b;
+			color: #133c7f;
 		}
 
 		#footer input[type="checkbox"]:focus + label:before,
@@ -4077,4 +3878,120 @@
 i {
 	padding: 20px;
 }
+
+/*STUFF FOR SLIDERS BELOW*/
+/*STUFF FOR SLIDERS BELOW*/
+/*STUFF FOR SLIDERS BELOW*/
+
+
+
+* {box-sizing:border-box}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    align-content: center;
+    height:170px
+    width:auto;/*maintain aspect ratio*/
+    max-width:600px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*Added in fading animation*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+/*STUFF FOR SLIDERS ABOVE*/
+/*STUFF FOR SLIDERS ABOVE*/
+/*STUFF FOR SLIDERS ABOVE*/
+/*STUFF FOR SLIDERS ABOVE*/
+/*STUFF FOR SLIDERS ABOVE*/
+/*STUFF FOR SLIDERS ABOVE*/
+
 
