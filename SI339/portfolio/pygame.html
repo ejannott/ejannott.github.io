@@ -6,37 +6,43 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/my.css" />
+		<!-- Added favicon -->
 		<link rel="shortcut icon" href="../../favicon.png">
 	</head>
 	<body>
 
 		<!-- Header -->
+			<!-- Changed code in top bar to incorportate a logo rather than just text -->
+			<!-- Also modified CSS to format the logo -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo"><img src="images/EJlogoWHITE.png" class="logo" href="index.html"></a>
+					<a href="index.html" class="logo"><img src="images/EJlogoWHITE.png" class="logo" alt="Logo that says E.J."></a>
 					<nav id="nav">
-						<a href="index.html" style="color: #6677ff;">Projects</a>
+						<a class="current" href="index.html">Projects</a>
 						<a href="about.html">About</a>
 						<a href="contact.html">Contact</a>
 					</nav>
 				</div>
 			</header>
+
+			<!-- Slide-out nav-bar added -->
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
 		<!-- Main -->
 			<section id="main" >
 				<div class="inner">
-					<header class="major special">
+					<header class="major special" tabindex="0">
 						<h1>Pygame: Defend The City!</h1>
 						<p>The goal was to learn how to use the modules within Pygame and code a compelling game using Python that was actually fun to play.  My biggest concern with this project was to make a game that had smooth gameplay and incorporated a number of visual effects.</p>
 					</header>
 
 					<!-- Added in a video player -->
-					<video controls="controls" width=100% height=auto name="Pygame" src="../../img/work/pygame_demo1.mov"></video>
+					<video tabindex="0" aria-label="Video of game in action" controls="controls" width=100% height=auto src="../../img/work/pygame_demo1.mov"></video>
 
 
-					<p><br>The objective of the game it to stay alive as as long as possible while also shooting the alien invaders with lasers from your ship - relatively straightforward.  Below are some of the game elements that I coded into the game that I was particularly proud of:</p>
-                  <ol>
+					<p tabindex="0"><br>The objective of the game it to stay alive as as long as possible while also shooting the alien invaders with lasers from your ship - relatively straightforward.  Below are some of the game elements that I coded into the game that I was particularly proud of:</p>
+                  <ol tabindex="0">
                     <li>Infinitely continuous scrolling background to simulate movement through space</li>
                     <li>Explosion animation</li>
                     <li>Health bar</li>
@@ -44,45 +50,45 @@
                     <li>Increasing enemy count as score rise</li>
                     <li>Gameplay music</li>
                   </ol>
-                  <h2>Final Outcome</h2>
-                  <p>The final product of this project was exactly what I was hoping for.  The scrolling background and explosions were the most difficult elements to incorporate.  The background is an image of a cityscape that duplicates itself, puts a copy at far left end of the background image that is on the screen, deletes the background image that falls off screen left, and then repeats this process continuously.</p>
-                  <p>The explosions happen by essentially running through a list of images and displaying them quickly on screen.  The challenge here was to write that process into my code in a succinct and effective way.</p>
-                  <p>The background and the explosions were the one thing that I definitely wanted to incorporate in order to make the game seem more legitimate and less of a homebrewed side project.  Right now, the game only simulates gameplay.  What I may try to add in the future is a game menu, and a “Game Over” screen with options (because right now the program just crashes when you die) <br></p>
+                  <h2 tabindex="0">Final Outcome</h2>
+                  <p tabindex="0">The final product of this project was exactly what I was hoping for.  The scrolling background and explosions were the most difficult elements to incorporate.  The background is an image of a cityscape that duplicates itself, puts a copy at far left end of the background image that is on the screen, deletes the background image that falls off screen left, and then repeats this process continuously.</p>
+                  <p tabindex="0">The explosions happen by essentially running through a list of images and displaying them quickly on screen.  The challenge here was to write that process into my code in a succinct and effective way.</p>
+                  <p tabindex="0">The background and the explosions were the one thing that I definitely wanted to incorporate in order to make the game seem more legitimate and less of a homebrewed side project.  Right now, the game only simulates gameplay.  What I may try to add in the future is a game menu, and a “Game Over” screen with options (because right now the program just crashes when you die) <br></p>
 
-                  <blockquote>
+                  <blockquote tabindex="0">
                     <p>See a slightly altered version of my game below, where a chihuahua stops my friend Lloyd from getting into the city...</p>
                   </blockquote>
 
 
 					<!-- Added in video player -->
-					<video controls="controls" width=100% height=auto name="Pygame Alternate" src="../../img/work/pygame_demo2.mov"></video>
+					<video tabindex="0" aria-label="Video of game in action" controls="controls" width=100% height=auto src="../../img/work/pygame_demo2.mov"></video>
 
 				</div>
 			</section>
 
 
+		<!-- Added a contact form to every page for easy and quick contact. -->
+		<!-- The form allows the user to type in their information, and it then creates an email for them containing the information that they've input -->
 		<!-- Footer -->
 			<footer>
 				<section id="footer">
 					<div class="inner">
-						<header>
-							<h2>Get in Touch</h2>
-						</header>
+						<h2 tabindex="0">Get in Touch With Me</h2>
 						<form method="post" action="mailto:EJANNOTT@UMICH.EDU" enctype="text/plain" target="_blank">
 							<div class="field half first">
 								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
+								<input type="text" name="name" id="name" aria-label="input name"/>
 							</div>
 							<div class="field half">
 								<label for="email">Email</label>
-								<input type="text" name="email" id="email" />
+								<input type="text" name="email" id="email" aria-label="input email"/>
 							</div>
 							<div class="field">
 								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="6"></textarea>
+								<textarea name="message" id="message" rows="6" aria-label="enter your message"></textarea>
 							</div>
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="alt" /></li>
+								<li><input type="submit" value="Send Message" class="alt" aria-label="send message button"/></li>
 							</ul>
 						</form>
 					</div>

@@ -6,43 +6,49 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/my.css" />
+		<!-- Added favicon -->
 		<link rel="shortcut icon" href="../../favicon.png">
 	</head>
 	<body>
 
 		<!-- Header -->
+			<!-- Changed code in top bar to incorportate a logo rather than just text -->
+			<!-- Also modified CSS to format the logo -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo"><img src="images/EJlogoWHITE.png" class="logo" href="index.html"></a>
+					<a href="index.html" class="logo"><img src="images/EJlogoWHITE.png" class="logo" alt="Logo that says E.J."></a>
 					<nav id="nav">
-						<a href="index.html">Projects</a>
-						<a href="about.html" style="color: #6677ff;">About</a>
+						<a class="current" href="index.html">Projects</a>
+						<a href="about.html">About</a>
 						<a href="contact.html">Contact</a>
 					</nav>
 				</div>
 			</header>
+
+			<!-- Slide-out nav-bar added -->
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
 		<!-- Main -->
 			<section id="main" >
 				<div class="inner">
-					<header class="major special">
+					<header class="major special" tabindex="0">
 						<h1>About Me</h1>
 						<p>I love figuring out how people operate with the things around them.  Specifically, I like seeing how people interact with technology, products, services, and even other people.  I’m interested in exploring what those experiences look like and how they can be improved, hence why I call myself a <strong>User Experience Designer</strong>.</p>
 					</header>
 
 					<!-- Slideshow container -->
-					<div class="slideshow-container">
+					<div class="slideshow-container"  tabindex="0" aria-label="slideshow with images of Ethan">
 
 					  <!-- semi-fixed width images with number and caption text -->
 					  <div class="mySlides fade">
 					    <div class="numbertext">1 / 2</div>
-					    <img src="../../img/work/alley2.jpg" style="width:100%">
+					    <img src="../../img/work/alley2.jpg" alt="ethan in an alley" style="width:100%">
 					  </div>
 
 					  <div class="mySlides fade">
 					    <div class="numbertext">2 / 2</div>
-					    <img src="../../img/work/profphoto.jpg" style="width:100%">
+					    <img src="../../img/work/profphoto.jpg" alt="ethan all dressed up" style="width:100%">
 					  </div>
 
 					  <!-- Next and previous buttons -->
@@ -58,37 +64,37 @@
 					</div>
 
 
-					<p>My time at the <strong>University of Michigan School of Information</strong> has allowed to me refine my skills in UX design.  I also have a curiosity for human language and cognition, which has been carried out through my Linguistics Minor.  I have been able to infuse my knowledge of how the mind works into a lot of the UX work I’ve done in my School of Information courses.  UMSI gave me practical experience with tools and methods that are popular in the industry.  This has given me the opportunity to design, build, and evaluate compelling interactive systems.  I believe in the philosophy of user-centered design - that is, designers of computing systems need to take account of and even prioritize the needs and experiences of the system’s users.  If not designing for the end user of a product or service, who else would we design for?</p>
+					<p tabindex="0">My time at the <strong>University of Michigan School of Information</strong> has allowed to me refine my skills in UX design.  I also have a curiosity for human language and cognition, which has been carried out through my Linguistics Minor.  I have been able to infuse my knowledge of how the mind works into a lot of the UX work I’ve done in my School of Information courses.  UMSI gave me practical experience with tools and methods that are popular in the industry.  This has given me the opportunity to design, build, and evaluate compelling interactive systems.  I believe in the philosophy of user-centered design - that is, designers of computing systems need to take account of and even prioritize the needs and experiences of the system’s users.  If not designing for the end user of a product or service, who else would we design for?</p>
 
-					<h3 class="text-uppercase">BEYOND MY BACHELOR’S IN INFO</h3>
+					<h3 class="text-uppercase" tabindex="0">BEYOND MY BACHELOR’S IN INFO</h3>
                       <p>Apart from my technical skills, something that I take pride in is my ability to notice and manage group dynamics.  My work as a <strong>Residential Staff Coordinator and RA</strong> for <strong>University of Michigan Housing</strong> has given me a ton of experience dealing with a very wide range of group dynamics situations.  Over my three years in Housing, I’ve dealt with everything from noticing and mediating minor staff conflict, to communicating staff needs to department administrators to bring about positive departmental change.  I have been very passionate about the work I’ve done in UM Housing and could go on forever about it.</p>
                       <p>I have also been working at the <strong>University of Michigan Transportation Research Institute (UMTRI)</strong> since September 2017.  Automotive has always been a hobby and huge passion of mine.  I believe we are on the cusp of revolutionary change in the automotive industry and I’m very excited to see what vehicles will look like 10 years (or less) in the future.  Being at UMTRI has given me the opportunity to be a part of the cutting-edge research that will shape the future for vehicles.</p>
 
 				</div>
 			</section>
 
+		<!-- Added a contact form to every page for easy and quick contact. -->
+		<!-- The form allows the user to type in their information, and it then creates an email for them containing the information that they've input -->
 		<!-- Footer -->
 			<footer>
 				<section id="footer">
 					<div class="inner">
-						<header>
-							<h2>Get in Touch</h2>
-						</header>
+						<h2 tabindex="0">Get in Touch With Me</h2>
 						<form method="post" action="mailto:EJANNOTT@UMICH.EDU" enctype="text/plain" target="_blank">
 							<div class="field half first">
 								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
+								<input type="text" name="name" id="name" aria-label="input name"/>
 							</div>
 							<div class="field half">
 								<label for="email">Email</label>
-								<input type="text" name="email" id="email" />
+								<input type="text" name="email" id="email" aria-label="input email"/>
 							</div>
 							<div class="field">
 								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="6"></textarea>
+								<textarea name="message" id="message" rows="6" aria-label="enter your message"></textarea>
 							</div>
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="alt" /></li>
+								<li><input type="submit" value="Send Message" class="alt" aria-label="send message button"/></li>
 							</ul>
 						</form>
 					</div>

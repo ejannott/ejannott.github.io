@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/my.css" />
 		<!-- Added favicon -->
 		<link rel="shortcut icon" href="../../favicon.png">
 	</head>
@@ -16,20 +17,21 @@
 			<!-- Also modified CSS to format the logo -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo"><img src="images/EJlogoWHITE.png" class="logo" href="index.html"></a>
+					<a href="index.html" class="logo"><img src="images/EJlogoWHITE.png" class="logo" alt="Logo that says E.J."></a>
 					<nav id="nav">
-						<a href="index.html" style="color: #6677ff;">Projects</a>
+						<a class="current" href="index.html">Projects</a>
 						<a href="about.html">About</a>
 						<a href="contact.html">Contact</a>
 					</nav>
 				</div>
 			</header>
+
 			<!-- Slide-out nav-bar added -->
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
 		<!-- Banner -->
 			<section id="banner">
-				<div class="inner">
+				<div class="inner" tabindex="0">
 					<h1>Ethan Jannott: <span><br>A User Experience Designer who is passionate about developing creative and efficient designs.<br/></span></h1>
 					<!-- Added a button that links out to my resume -->
 					<ul class="actions">
@@ -40,7 +42,7 @@
 
 		<!-- One -->
 			<section id="one">
-				<div class="inner">
+				<div class="inner" tabindex="0">
 					<header>
 						<h2>About My Projects</h2>
 					</header>
@@ -59,9 +61,9 @@
 							</header>
 							<!-- Make the images fit in the screen -->
 							<div class="image fit">
-								<a href="automate.html"><img src="../../img/work/auto11.png" alt="Automous vehicle interface" /></a>
+								<a href="automate.html"><img src="../../img/work/auto11.png" alt="Automous vehicle interface image" /></a>
 							</div>
-							<p>How can we build a stronger trust between autonomous cars and potentially dubious users through design? My team and I designed an autonomous vehicle interface to try and answer this question.</p>
+							<p tabindex="0">How can we build a stronger trust between autonomous cars and potentially dubious users through design? My team and I designed an autonomous vehicle interface to try and answer this question.</p>
 						</div>
 					</article>
 					<article class="alt">
@@ -73,7 +75,7 @@
 								<!-- linking to files in my other website data -->
 								<a href="pygame.html"><img src="../../img/work/pygame_screen.png" alt="Python game screenshot" /></a>
 							</div>
-							<p>A small game that I coded in Python using Pygame. The goal was to learn how to use the modules within Pygame and code a compelling game using Python that was actually fun to play.</p>
+							<p tabindex="0">A small game that I coded in Python using Pygame. The goal was to learn how to use the modules within Pygame and code a compelling game using Python that was actually fun to play.</p>
 						</div>
 					</article>
 					<article>
@@ -84,7 +86,7 @@
 							<div class="image fit">
 								<a href="rmhc.html"><img src="../../img/work/picMojo2.jpg" alt="Image of papers picturing mobile app design" /></a>
 							</div>
-							<p>Helped the Ronald McDonald Family House in Ann Arbor design their app and bring it up to the new standards that RMHC set over the summer of 2017.</p>
+							<p tabindex="0">Helped the Ronald McDonald Family House in Ann Arbor design their app and bring it up to the new standards that RMHC set over the summer of 2017.</p>
 						</div>
 					</article>
 				</div>
@@ -97,24 +99,22 @@
 			<footer>
 				<section id="footer">
 					<div class="inner">
-						<header>
-							<h2>Get in Touch</h2>
-						</header>
+						<h2 tabindex="0">Get in Touch With Me</h2>
 						<form method="post" action="mailto:EJANNOTT@UMICH.EDU" enctype="text/plain" target="_blank">
 							<div class="field half first">
 								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
+								<input type="text" name="name" id="name" aria-label="input name"/>
 							</div>
 							<div class="field half">
 								<label for="email">Email</label>
-								<input type="text" name="email" id="email" />
+								<input type="text" name="email" id="email" aria-label="input email"/>
 							</div>
 							<div class="field">
 								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="6"></textarea>
+								<textarea name="message" id="message" rows="6" aria-label="enter your message"></textarea>
 							</div>
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="alt" /></li>
+								<li><input type="submit" value="Send Message" class="alt" aria-label="send message button"/></li>
 							</ul>
 						</form>
 					</div>

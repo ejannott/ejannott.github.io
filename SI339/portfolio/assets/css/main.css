@@ -1,6 +1,9 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
 
+/*CSS borrowed from templated.co*/
+/*modification have been marked*/
+/*personal css is in my.css*/
 
 /* Reset */
 
@@ -3114,6 +3117,8 @@
 			position: relative;
 		}
 
+		#header .inner 
+
 			@media screen and (max-width: 480px) {
 
 				#header .inner {
@@ -3186,13 +3191,7 @@
 		display: inline-block;
 	}
 
-		@media screen and (max-width: 980px) {
 
-			#nav {
-				display: none;
-			}
-
-		}
 
 	.navPanelToggle {
 		position: fixed;
@@ -3224,21 +3223,6 @@
 			width: 3.5em;
 		}
 
-		@media screen and (max-width: 980px) {
-
-			.navPanelToggle {
-				display: block;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			.navPanelToggle {
-				right: 1em;
-			}
-
-		}
 
 		.navPanelToggle *:before {
 			color: #fff;
@@ -3344,13 +3328,6 @@
 				color: inherit;
 			}
 
-		@media screen and (max-width: 980px) {
-
-			#navPanel {
-				display: block;
-			}
-
-		}
 
 /* Banner */
 
@@ -3359,7 +3336,7 @@
 		color: #f2a3a5;
 		padding: 13em 0 11em 0;
 		background-color: #0c0c0c;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner2.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner2.jpg"); /*Linear gradient added to darken background image*/
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 15% left;
@@ -3659,177 +3636,4 @@
 		}
 
 
-/* Self-made footer modifications */
 
-	#footer {
-		background-color: #133c7f;
-		color: #f2a3a5;
-		padding: 4em 0 2em 0;
-		background: #133c7f;
-	}
-
-		#footer input, #footer textarea, #footer label {
-			color: #ffffff;
-		}
-
-		#footer h2 {
-			color: #fff;
-		}
-
-			#footer input[type="submit"].alt,
-			#footer input[type="reset"].alt,
-			#footer input[type="button"].alt,
-			#footer button.alt,
-			#footer .button.alt {
-				background-color: transparent;
-				box-shadow: inset 0 0 0 2px #fff;
-				color: #ffffff !important;
-			}
-
-				#footer input[type="submit"].alt:hover,
-				#footer input[type="reset"].alt:hover,
-				#footer input[type="button"].alt:hover,
-				#footer button.alt:hover,
-				#footer .button.alt:hover {
-					background: rgba(255, 255, 255, 0.25);
-				}
-
-				#footer input[type="submit"].alt:active,
-				#footer input[type="reset"].alt:active,
-				#footer input[type="button"].alt:active,
-				#footer button.alt:active,
-				#footer .button.alt:active {
-					background-color: rgba(255, 255, 255, 0.2);
-				}
-
-
-
-			#footer input[type="text"]:focus,
-			#footer input[type="password"]:focus,
-			#footer input[type="email"]:focus,
-			#footer select:focus,
-			#footer textarea:focus {
-				border-color: #ffffff;
-				box-shadow: 0 0 0 2px #ffffff;
-			}
-
-
-
-i {
-	padding: 20px;
-}
-
-/*STUFF FOR SLIDERS BELOW*/
-/*STUFF FOR SLIDERS BELOW*/
-/*STUFF FOR SLIDERS BELOW*/
-
-
-
-* {box-sizing:border-box}
-
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 600px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-    align-content: center;
-    height:170px
-    width:auto;/*maintain aspect ratio*/
-    max-width:600px;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/*Added in fading animation*/
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
-
-/*STUFF FOR SLIDERS ABOVE*/
-/*STUFF FOR SLIDERS ABOVE*/
-/*STUFF FOR SLIDERS ABOVE*/
-/*STUFF FOR SLIDERS ABOVE*/
-/*STUFF FOR SLIDERS ABOVE*/
-/*STUFF FOR SLIDERS ABOVE*/

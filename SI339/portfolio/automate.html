@@ -6,58 +6,64 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/my.css" />
+		<!-- Added favicon -->
 		<link rel="shortcut icon" href="../../favicon.png">
 	</head>
 	<body>
 
 		<!-- Header -->
+			<!-- Changed code in top bar to incorportate a logo rather than just text -->
+			<!-- Also modified CSS to format the logo -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo"><img src="images/EJlogoWHITE.png" class="logo" href="index.html"></a>
+					<a href="index.html" class="logo"><img src="images/EJlogoWHITE.png" class="logo" alt="Logo that says E.J."></a>
 					<nav id="nav">
-						<a href="index.html" style="color: #6677ff;">Projects</a>
+						<a class="current" href="index.html">Projects</a>
 						<a href="about.html">About</a>
 						<a href="contact.html">Contact</a>
 					</nav>
 				</div>
 			</header>
+
+			<!-- Slide-out nav-bar added -->
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
 		<!-- Main -->
 			<section id="main" >
 				<div class="inner">
-					<header class="major special">
+					<header class="major special" tabindex="0">
 						<h1>AutoMate</h1>
 						<p>With Autonomous Vehicles (AVs) on the rise, how can we shape an in-vehicle user experience that creates a bridge of trust between passengers and the car? AVs may seem like a black box to many potential users. What my team was working towards in this project was to develop an interface for a fully autonomous vehicle that conveys relevant information to the passengers that shows not only what the car is reacting to, but also what the car is anticipating in the environment.</p>
 					</header>
 
 					<!-- Slideshow container -->
-					<div class="slideshow-container">
+					<div class="slideshow-container" tabindex="0" aria-label="slideshow with picture or autonomous vehicle interface mockups">
 
 					  <!-- Full-width images with number and caption text -->
 					  <div class="mySlides fade">
 					    <div class="numbertext">1 / 5</div>
-					    <img src="../../img/work/auto3.jpg" style="width:100%">
+					    <img src="../../img/work/auto3.jpg" alt="image of car interface" style="width:100%">
 					  </div>
 
 					  <div class="mySlides fade">
 					    <div class="numbertext">2 / 5</div>
-					    <img src="../../img/work/auto8.jpg" style="width:100%">
+					    <img src="../../img/work/auto8.jpg" alt="image of car interface editing" style="width:100%">
 					  </div>
 
 					  <div class="mySlides fade">
 					    <div class="numbertext">3 / 5</div>
-					    <img src="../../img/work/auto7.jpg" style="width:100%">
+					    <img src="../../img/work/auto7.jpg" alt="image of prototyping" style="width:100%">
 					  </div>
 
 					  <div class="mySlides fade">
 					    <div class="numbertext">4 / 5</div>
-					    <img src="../../img/work/auto6.jpg" style="width:100%">
+					    <img src="../../img/work/auto6.jpg" alt="image of prototyping" style="width:100%">
 					  </div>
 
 					  <div class="mySlides fade">
 					    <div class="numbertext">5 / 5</div>
-					    <img src="../../img/work/auto4.jpg" style="width:100%">
+					    <img src="../../img/work/auto4.jpg" alt="image of prototyping" style="width:100%">
 					  </div>
 
 					  <!-- Next and previous buttons -->
@@ -76,51 +82,52 @@
 					</div>
 
 
-					<p>Across the majority of the AV stakeholders, there is a fear of autonomy on the road. Potential stakeholders would be anyone who might use an autonomous car for transport - i.e. people who use public transit, people who use Uber/Lyft, elderly people, children who need to get to school. There are a lot of personas and scenarios that you could make up for the autonomous vehicle user, and I think that’s why it’s so interesting to me. Tech that would have to be focused on is both in-vehicle passenger notification systems, as well as external notification systems that could notify pedestrians.</p>
-					<p>For the sake of this project, we made our target audience elderly people who use a personal to get around. We chose this audience for two reasons: (1) people 65+ years old are consistently responsible for roughly 10% of all auto accidents, and (2) elderly people are more likely to be resistant to new technology than younger people - it would be more of a challenge to get them to use and trust an autonomous car.</p>
-					<p>This project was for the School of Information course SI 482: Interaction Design Studio. The goal was to choose a project and get practice working through all of the steps of the design process. Each step our group took is detailed a bit below.</p>
+					<p tabindex="0">Across the majority of the AV stakeholders, there is a fear of autonomy on the road. Potential stakeholders would be anyone who might use an autonomous car for transport - i.e. people who use public transit, people who use Uber/Lyft, elderly people, children who need to get to school. There are a lot of personas and scenarios that you could make up for the autonomous vehicle user, and I think that’s why it’s so interesting to me. Tech that would have to be focused on is both in-vehicle passenger notification systems, as well as external notification systems that could notify pedestrians.</p>
+					<p tabindex="0">For the sake of this project, we made our target audience elderly people who use a personal to get around. We chose this audience for two reasons: (1) people 65+ years old are consistently responsible for roughly 10% of all auto accidents, and (2) elderly people are more likely to be resistant to new technology than younger people - it would be more of a challenge to get them to use and trust an autonomous car.</p>
+					<p tabindex="0">This project was for the School of Information course SI 482: Interaction Design Studio. The goal was to choose a project and get practice working through all of the steps of the design process. Each step our group took is detailed a bit below.</p>
 					<ol>
-                    <li><strong>Finding a problem and establishing a problem statement.</strong>  To get our entire team on the same page, we clearly defined the exact problem we were trying to solve so that we could make sure our later work was within our scope throughout the project.</li>
-                    
-                    <li><strong>Competitive analysis.</strong>  To find competitors, we asked three questions: (1) What technology already exists within vehicles that delivers the driver feedback as to what the car is detecting around it?  (2) How do already existing AV systems deliver feedback to drivers?  And (3) how do currently existing autonomous technologies inspire user trust?  I identified and researched a number of systems and companies, including Mercedes-Benz’s AV tech and Tesla’s Autopilot, among other auto manufacturers’ technologies.  I also researched Starship Technologies quite extensively - they’re a company that creates autonomous drones that are meant to service humans in a variety of ways.  We assessed how they work to build trust between their drones and the people that interact with them.</li>
+	                    <li tabindex="0"><strong>Finding a problem and establishing a problem statement.</strong>  To get our entire team on the same page, we clearly defined the exact problem we were trying to solve so that we could make sure our later work was within our scope throughout the project.</li>
+	                    
+	                    <li tabindex="0"><strong>Competitive analysis.</strong>  To find competitors, we asked three questions: (1) What technology already exists within vehicles that delivers the driver feedback as to what the car is detecting around it?  (2) How do already existing AV systems deliver feedback to drivers?  And (3) how do currently existing autonomous technologies inspire user trust?  I identified and researched a number of systems and companies, including Mercedes-Benz’s AV tech and Tesla’s Autopilot, among other auto manufacturers’ technologies.  I also researched Starship Technologies quite extensively - they’re a company that creates autonomous drones that are meant to service humans in a variety of ways.  We assessed how they work to build trust between their drones and the people that interact with them.</li>
 
-                    <li><strong>Creating personas and scenarios.</strong>  I personally created 2 of the 5 personas that we had for this project.  I created a primary and a negative persona.</li>
+	                    <li tabindex="0"><strong>Creating personas and scenarios.</strong>  I personally created 2 of the 5 personas that we had for this project.  I created a primary and a negative persona.</li>
 
-                    <li><strong>Sketching alternatives and storyboarding.</strong>  In this stage, I personally brainstormed 40 alternative solutions to our problem and sketched each solution.  You can see a sample of one of the storyboards that I created <a href="img/work/storyboard.pdf" target="_blank">here</a>.</li>
+	                    <li tabindex="0"><strong>Sketching alternatives and storyboarding.</strong>  In this stage, I personally brainstormed 40 alternative solutions to our problem and sketched each solution.  You can see a sample of one of the storyboards that I created <a href="img/work/storyboard.pdf" target="_blank">here</a>.</li>
 
-                    <li><strong>Design Space Analysis.</strong>  Using a Question, Options, Criteria (QOC) approach, we started to weigh out what our biggest challenges were and what specific solutions we wanted to focus on - i.e. what features we wanted to include and focus on in our wireframes and prototypes.  I personally did 3 QOC trees.</li>
+	                    <li tabindex="0"><strong>Design Space Analysis.</strong>  Using a Question, Options, Criteria (QOC) approach, we started to weigh out what our biggest challenges were and what specific solutions we wanted to focus on - i.e. what features we wanted to include and focus on in our wireframes and prototypes.  I personally did 3 QOC trees.</li>
 
-                    <li><strong>Paper prototyping.</strong>  For our paper prototype, I personally created our interface template that had both our windshield screen and our center head unit screen.  In the demo of our paper prototype, I was the “computer,” so I was the one moving the different elements around on the screens.  You can view my paper prototype in action <a href="https://drive.google.com/file/d/0B-fcYo74V08ZQkNvUTludEsxc2s/view?usp=sharing" target="_blank">here</a>.</li>
+	                    <li tabindex="0"><strong>Paper prototyping.</strong>  For our paper prototype, I personally created our interface template that had both our windshield screen and our center head unit screen.  In the demo of our paper prototype, I was the “computer,” so I was the one moving the different elements around on the screens.  You can view my paper prototype in action <a href="https://drive.google.com/file/d/0B-fcYo74V08ZQkNvUTludEsxc2s/view?usp=sharing" target="_blank">here</a>.</li>
 
-                    <li><strong>Digital prototyping.</strong>  For our digital prototype, I did the user flow for our first version.  We completely changed our interface in our V2.  For this, I made all of our screens for the prototype and polished the user flow.  I heavily used Sketch, Illustrator, and InVision in this stage of our project.</li>
+	                    <li tabindex="0"><strong>Digital prototyping.</strong>  For our digital prototype, I did the user flow for our first version.  We completely changed our interface in our V2.  For this, I made all of our screens for the prototype and polished the user flow.  I heavily used Sketch, Illustrator, and InVision in this stage of our project.</li>
 
-                    <li><strong>Presentation.</strong>  Simple and straightforward, I was the point person for presenting my team’s project and prototype to observers that saw our project in a gallery-style expo within the UM School of Information.  I used Illustrator to create the poster that showed our problem statement, what our final product was and how it addressed our problem statement.</li>
+	                    <li tabindex="0"><strong>Presentation.</strong>  Simple and straightforward, I was the point person for presenting my team’s project and prototype to observers that saw our project in a gallery-style expo within the UM School of Information.  I used Illustrator to create the poster that showed our problem statement, what our final product was and how it addressed our problem statement.</li>
+                	</ol>
 				</div>
 			</section>
 
 
+		<!-- Added a contact form to every page for easy and quick contact. -->
+		<!-- The form allows the user to type in their information, and it then creates an email for them containing the information that they've input -->
 		<!-- Footer -->
 			<footer>
 				<section id="footer">
 					<div class="inner">
-						<header>
-							<h2>Get in Touch</h2>
-						</header>
+						<h2 tabindex="0">Get in Touch With Me</h2>
 						<form method="post" action="mailto:EJANNOTT@UMICH.EDU" enctype="text/plain" target="_blank">
 							<div class="field half first">
 								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
+								<input type="text" name="name" id="name" aria-label="input name"/>
 							</div>
 							<div class="field half">
 								<label for="email">Email</label>
-								<input type="text" name="email" id="email" />
+								<input type="text" name="email" id="email" aria-label="input email"/>
 							</div>
 							<div class="field">
 								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="6"></textarea>
+								<textarea name="message" id="message" rows="6" aria-label="enter your message"></textarea>
 							</div>
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="alt" /></li>
+								<li><input type="submit" value="Send Message" class="alt" aria-label="send message button"/></li>
 							</ul>
 						</form>
 					</div>

@@ -6,53 +6,59 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/my.css" />
+		<!-- Added favicon -->
 		<link rel="shortcut icon" href="../../favicon.png">
 	</head>
 	<body>
 
 		<!-- Header -->
+			<!-- Changed code in top bar to incorportate a logo rather than just text -->
+			<!-- Also modified CSS to format the logo -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo"><img src="images/EJlogoWHITE.png" class="logo" href="index.html"></a>
+					<a href="index.html" class="logo"><img src="images/EJlogoWHITE.png" class="logo" alt="Logo that says E.J."></a>
 					<nav id="nav">
-						<a href="index.html" style="color: #6677ff;">Projects</a>
+						<a class="current" href="index.html">Projects</a>
 						<a href="about.html">About</a>
 						<a href="contact.html">Contact</a>
 					</nav>
 				</div>
 			</header>
+
+			<!-- Slide-out nav-bar added -->
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
 		<!-- Main -->
-			<section id="main" >
+			<section id="main">
 				<div class="inner">
-					<header class="major special">
+					<header class="major special" tabindex="0">
 						<h1>RHMC Ann Arbor Mobile App Design</h1>
 						<p>This is nonprofit work that I did for the Ronald McDonald Family House here in Ann Arbor. They were redesigning their website to meet the new design standards set by the national organization, and in the process decided they wanted a mobile app as well. I made a high fidelity prototype for the backend programmers to use as a template in their creation of the app.</p>
 					</header>
 
 					<!-- Slideshow container -->
-					<div class="slideshow-container">
+					<div class="slideshow-container"  tabindex="0" aria-label="slideshow of images showing printouts of app design">
 
 					  <!-- Full-width images with number and caption text -->
 					  <div class="mySlides fade">
 					    <div class="numbertext">1 / 4</div>
-					    <img src="../../img/work/rmhc.jpg" style="width:100%">
+					    <img src="../../img/work/rmhc.jpg" alt="image of paper printouts" style="width:100%">
 					  </div>
 
 					  <div class="mySlides fade">
 					    <div class="numbertext">2 / 4</div>
-					    <img src="../../img/work/rmhc3.jpg" style="width:100%">
+					    <img src="../../img/work/rmhc3.jpg" alt="image of paper printouts" style="width:100%">
 					  </div>
 
 					  <div class="mySlides fade">
 					    <div class="numbertext">3 / 4</div>
-					    <img src="../../img/work/rmhc4.jpg" style="width:100%">
+					    <img src="../../img/work/rmhc4.jpg" alt="image of paper printouts" style="width:100%">
 					  </div>
 
 					  <div class="mySlides fade">
 					    <div class="numbertext">4 / 4</div>
-					    <img src="../../img/work/rmhc1.jpg" style="width:100%">
+					    <img src="../../img/work/rmhc1.jpg" alt="image of paper printouts" style="width:100%">
 					  </div>
 
 					  <!-- Next and previous buttons -->
@@ -70,37 +76,37 @@
 					</div>
 
 
-					<p>Before this app, families would come into the RMHC Family House in Ann Arbor and be given a large binder that had a number of documents with information about that house.  Many of these documents were outdated, redundant, and hard to locate.  The mobile app remedied the need for house guests to easily find the information their need in a convenient location.</p>
+					<p tabindex="0">Before this app, families would come into the RMHC Family House in Ann Arbor and be given a large binder that had a number of documents with information about that house.  Many of these documents were outdated, redundant, and hard to locate.  The mobile app remedied the need for house guests to easily find the information their need in a convenient location.</p>
 
 					<blockquote>
-                    <p><a href="../../img/work/rhmc_display.pdf" target="_blank" view>Click here</a> to view a display sample of some of the elements that I designed.</p>
+                    <p tabindex="0"><a href="../../img/work/rhmc_display.pdf" target="_blank">Click here</a> to view a display sample of some of the elements that I designed.</p>
                   </blockquote>
 
 				</div>
 			</section>
 
+		<!-- Added a contact form to every page for easy and quick contact. -->
+		<!-- The form allows the user to type in their information, and it then creates an email for them containing the information that they've input -->
 		<!-- Footer -->
 			<footer>
 				<section id="footer">
 					<div class="inner">
-						<header>
-							<h2>Get in Touch</h2>
-						</header>
+						<h2 tabindex="0">Get in Touch With Me</h2>
 						<form method="post" action="mailto:EJANNOTT@UMICH.EDU" enctype="text/plain" target="_blank">
 							<div class="field half first">
 								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
+								<input type="text" name="name" id="name" aria-label="input name"/>
 							</div>
 							<div class="field half">
 								<label for="email">Email</label>
-								<input type="text" name="email" id="email" />
+								<input type="text" name="email" id="email" aria-label="input email"/>
 							</div>
 							<div class="field">
 								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="6"></textarea>
+								<textarea name="message" id="message" rows="6" aria-label="enter your message"></textarea>
 							</div>
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="alt" /></li>
+								<li><input type="submit" value="Send Message" class="alt" aria-label="send message button"/></li>
 							</ul>
 						</form>
 					</div>
