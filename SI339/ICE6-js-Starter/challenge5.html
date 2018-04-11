@@ -10,23 +10,23 @@
 		background-color: #b3b3b3;
 	}
 	#image{
-    	line-height:325px;
+		line-height:325px;
 		width: 388px;
-    	height: 325px;
+		height: 325px;
 		border:5px solid black;
 		margin:0 auto;
-    	background-repeat: no-repeat;
-    	color:#FFFFFF;
-    	text-align: center;
-    	background-color: #8e68ff;
-    	background-size: 100%;
-    	margin-bottom:25px;
-    	font-size:150%;
+		background-repeat: no-repeat;
+		color:#FFFFFF;
+		text-align: center;
+		background-color: #8e68ff;
+		background-size: 100%;
+		margin-bottom:25px;
+		font-size:150%;
 	}
 	.preview{
 		width:10%;
 		margin-left:17%;
-    	border: 10px solid black;
+		border: 10px solid black;
 	}
 	img{
 		width:95%;
@@ -34,72 +34,47 @@
 	h1{
 		text-align: center;
 	}
-	</style>
+</style>
 
 </head>
 
 <body>
 	<h1>Challenge 5</h1>
-		<div id = "image">
-			Hover over an image below.
-		</div>
+	<div id = "image">
+		Hover over an image below to display here.
+	</div>
 
-		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" 
-			tabindex='1' 
-		    onfocus = 'upDate(this)' 
-		    onblur = 'unDo()' 
-		    onmouseover = 'upDate(this)' 
-	    	onmouseleave = 'unDo()'
-	    	
-			alt = "Styling with a Bandana" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
-			>
+	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseleave = "unDo()" tabindex="0" onfocus="upDate(this)" onfocusout="unDo()";>
 
+	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseleave = "unDo()" tabindex="0" onfocus="upDate(this)" onfocusout="unDo()";>
 
-		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->	
-		<img class = "preview" 
-			alt = "With My Boy" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
-	
-		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" tabindex = "1" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
-			alt = "Young Puppy";>
+	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseleave = "unDo()" tabindex="0" onfocus="upDate(this)" onfocusout="unDo()";>
 
 	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at: 
-	// https://codepen.io/ColleenEMc/pen/XmZzWw
-	var mainImage = document.getElementById('image');
-	var sourceImages = document.getElementsByTagName('img');
-
-	// sourceImages.forEach (function(elem))
-
-	for (var i = 0; i < sourceImages.length; i++){
-		var elem = sourceImages [i];
-		// console.log('#', elem);
-		elem.onmouseenter = function(){
-			//1: get alt text from 'elem'
-			//2: set the alt in the 'mainImage'
-			console.log('mouse enter');
+		function upDate(previewPic){
+		/* In this function you should
+	    1) change the url for the background image of the div with the id = "image"
+	    to the source file of the preview image
+	    2) Change the text  of the div with the id = "image"
+	    to the alt text of the preview image
+	    */
+	    var previewImage = previewPic.src;
+	    var previewAlt = previewPic.alt;
+	    var image = document.getElementById("image");
+	    image.style.backgroundImage = "url(" + previewImage + ")";
+	    image.innerHTML = previewAlt;
 		}
-		elem.onmouseleave = function(){
-			console.log('mouse leave');
-			//1: set the ale in the 'mainimage' to the default value.
+		function unDo(){
+		     /* In this function you should
+		    1) Update the url for the background image of the div with the id = "image"
+		    back to the orginal-image.  You can use the css code to see what that original URL was
+		    2) Change the text  of the div with the id = "image"
+		    back to the original text.  You can use the html code to see what that original text was
+		    */
+		    var image = document.getElementById("image");
+		    image.style.backgroundImage = "";
+		    image.innerHTML = "Hover over an image below to display here.";
 		}
-	}
-
-
-	// }
-
-
-	// var img1 = sourceImages[0];
-	// var img2 = sourceImages[1];
-	// var img3 = sourceImages[2];
-
-	// console.log()
-
-	</script>
+</script>
 </body>
 </html>
-	
