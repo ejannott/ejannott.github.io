@@ -65,61 +65,19 @@
 	<!-- HAVE JAVASCRIPT JUST BEFORE THE CLOSING BODY TAG -->
 	<script type= "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 
-	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at: 
+	<script >
+	// I used Two functions here.  Starter idea at:
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
-
-		
-		var iAmReady = function() {
-			var mainImage = $("#image");
-			var previewImages = $(".preview");
-
-			console.log(previewImages.length);
-
-
-			//Step 2: bind the events
-
-			// .on:  1. name of the event you want to listen to, 2. the function you want to execute when the events happens.  
-			//This type of function is a CALLBACK.
-			previewImages.on("mouseenter focus",function() { //happens when mouse enters, or when the element is focused.
-				console.log("Hovered!");
-
-				// 'this' is the instance of the element that initiates that event
-
-				var myCurrentPreviewPage = $(this);
-				//to get access to jQuery APIs
-
-				var p_src = myCurrentPreviewPage.attr("src");
-				var p_alt = myCurrentPreviewPage.attr("alt");
-
-				// step 3: not st the new values
-				mainImage.text(p_alt); //set
-
-				mainImage.css("background","url(" + p_src + ")"); //set
-
-				// var temp =mainImage.css("background") //get
-				// console.log(temp);
-
-
-			});
-
-			previewImages.on("mouseleave blur",function() { //happens when mouse enters, or when the element is focused.
-				console.log("NOT hovered!");
-
-				mainImage.text("Hover over an image below"); //set
-
-				mainImage.css("background","#8e68ff"); //set
-
-				// var temp =mainImage.css("background") //get
-				// console.log(temp);
-			});
-
-
-		};
-
-
-		
-
+	$(document).ready(function(){
+		$(".preview").on('mouseover focus', function() {
+			$("#image").text($(this).attr("alt"));
+			$("#image").css('background-image', 'url("' + $(this).attr("src") + '")');
+		})
+		$(".preview").on('mouseleave blur', function(){
+			$("#image").text("Hover over an image below");
+			$("#image").css('background-image', '');
+		});
+});
 	</script>
 
 </body>
