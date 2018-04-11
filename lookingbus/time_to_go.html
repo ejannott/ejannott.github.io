@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LookingBus App</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+
+</head>
+<body>
+
+	<img src="img/time_to_go.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="Time to go! Your bus will be arriving at CCTC in 5 minutes." title="Time to go! Your bus will be arriving at CCTC in 5 minutes." href="" coords="210,758,1275,1498" shape="rect">
+    <area target="" alt="approximate walk time to the stop from your current location is 5 minutes." title="approximate walk time to the stop from your current location is 5 minutes." href="" coords="165,1622,1282,1686" shape="rect">
+    <area target="" alt="Tap to start trip" title="Tap to start trip" href="pickup_5min_short.html" coords="245,1821,1219,2022" shape="rect">
+    <area target="" alt="close popup." title="close popup." href="pickup_5min_short.html" coords="" shape="rect">
+</map>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
+	
+</body>
+</html>

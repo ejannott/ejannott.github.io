@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LookingBus App</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+
+</head>
+<body>
+
+	<img src="img/complete.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="bus ride is complete. Destination reached at 6:50 PM." title="bus ride is complete. Destination reached at 6:50 PM." href="" coords="59,1132,1374,1510" shape="rect">
+    <area target="" alt="this is your ride on A A T A route 4 to Ypsilanti transit center." title="this is your ride on A A T A route 4 to Ypsilanti transit center." href="" coords="64,356,1394,1004" shape="rect">
+    <area target="" alt="back to home." title="back to home." href="home.html" coords="41,75,171,192" shape="rect">
+    <area target="" alt="ride information. 24 total bus stops. travel time was 22 minutes. Sara K was your driver." title="ride information. 24 total bus stops. travel time was 22 minutes. Sara K was your driver." href="" coords="64,1670,1269,2112" shape="rect">
+    <area target="" alt="home.html" title="home.html" href="home.html" coords="112,2211,1310,2413" shape="rect">
+</map>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
+	
+</body>
+</html>

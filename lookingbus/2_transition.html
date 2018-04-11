@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LookingBus App</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+
+</head>
+<body>
+
+	<img src="img/2_transition.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="13 stops later. Tap to move ahead." title="13 stops later. Tap to move ahead." href="2_inroute_short.html" coords="5,20,1427,3225" shape="rect">
+</map>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
+	
+</body>
+</html>

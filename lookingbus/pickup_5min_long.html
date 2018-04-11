@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LookingBus App</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+
+</head>
+<body>
+
+	<img src="img/pickup_5min_long.png" usemap="#image-map">
+
+	<map name="image-map">
+	    <area target="" alt="Pickup for A A T A route 4 is in 5 minutes" title="Pickup for A A T A route 4 is in 5 minutes" href="" coords="65,1120,1375,1644" shape="rect">
+	    <area target="" alt="back to home screen" title="back to home screen" href="home.html" coords="51,66,172,196" shape="rect">
+	    <area target="" alt="this is your ride on A A T A route 4 to Ypsilanti transit center. " title="this is your ride on A A T A route 4 to Ypsilanti transit center. " href="" coords="83,376,1358,1009" shape="rect">
+	    <area target="" alt="ride information. 24 total bus stops. estimated travel time is 20 minutes. Sara K will be your driver. Tap to show less" title="ride information. 24 total bus stops. estimated travel time is 20 minutes. Sara K will be your driver. Tap to show less" href="" coords="65,1820,1416,2335" shape="rect">
+	    <area target="" alt="list of stops on A A t a route 4" title="list of stops on A A t a route 4" href="" coords="60,2387,1418,6305" shape="rect">
+	    <area target="" alt="end trip" title="end trip" href="home.html" coords="114,6685,1315,6897" shape="rect">
+	    <area target="" alt="time travel. developer button." title="time travel. developer button." href="madeit_notif.html" coords="468,7024,974,7122" shape="rect">
+	</map>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
+	
+</body>
+</html>

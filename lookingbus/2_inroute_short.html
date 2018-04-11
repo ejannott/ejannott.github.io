@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LookingBus App</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+
+</head>
+<body>
+
+	<img src="img/2_inroute_short.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="in route - 10 stops left. now at washtenaw and foster road stop. Estimated time of arrival is 10 minutes from now at 6:49 PM. " title="in route - 10 stops left. now at washtenaw and foster road stop. Estimated time of arrival is 10 minutes from now at 6:49 PM. " href="" coords="64,1128,1374,1634" shape="rect">
+    <area target="" alt="this is your ride on A A T A route 4 to Ypsilanti transit center." title="this is your ride on A A T A route 4 to Ypsilanti transit center." href="" coords="79,367,1379,1017" shape="rect">
+    <area target="" alt="back to home" title="back to home" href="home.html" coords="64,68,166,190" shape="rect">
+    <area target="" alt="ride information. 24 total bus stops. estimated travel time is 20 minutes. Sara K will be your driver. Tap to show all stops in bus route. " title="ride information. 24 total bus stops. estimated travel time is 20 minutes. Sara K will be your driver. Tap to show all stops in bus route. " href="2_inroute_long.html" coords="64,1810,1290,2374" shape="rect">
+    <area target="" alt="end trip" title="end trip" href="home.html" coords="148,2774,1341,2978" shape="rect">
+    <area target="" alt="time travel. developer button." title="time travel. developer button." href="3_transition.html" coords="482,3089,969,3176" shape="rect">
+</map>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
+	
+</body>
+</html>

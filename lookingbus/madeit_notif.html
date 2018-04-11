@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LookingBus App</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+
+</head>
+<body>
+
+	<img src="img/madeit_notif.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="You've made it to the stop! The driver has been notified that you're waiting at the stop. The bus will be there shortly. Your driver is Sara K." title="You've made it to the stop! The driver has been notified that you're waiting at the stop. The bus will be there shortly. Your driver is Sara K." href="" coords="132,790,1293,1746" shape="rect">
+    <area target="" alt="Okay button." title="Okay button." href="waiting_short.html" coords="214,1821,1248,2030" shape="rect">
+</map>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
+	
+</body>
+</html>

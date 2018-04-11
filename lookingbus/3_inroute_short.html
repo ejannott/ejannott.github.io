@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LookingBus App</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+
+</head>
+<body>
+
+	<img src="img/3_inroute_short.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="Destination at next stop! Now at washtenaw and perrin street. Prepare to exit the bus." title="Destination at next stop! Now at washtenaw and perrin street. Prepare to exit the bus." href="" coords="61,1129,1376,1640" shape="rect">
+    <area target="" alt="this is your ride on A A T A route 4 to Ypsilanti transit center." title="this is your ride on A A T A route 4 to Ypsilanti transit center." href="" coords="71,356,1399,992" shape="rect">
+    <area target="" alt="back to home." title="back to home." href="home.html" coords="54,75,161,185" shape="rect">
+    <area target="" alt="ride information. 24 total bus stops. estimated travel time is 20 minutes. Sara K will be your driver. Tap to show less." title="ride information. 24 total bus stops. estimated travel time is 20 minutes. Sara K will be your driver. Tap to show less." href="" coords="84,1846,1305,2356" shape="rect">
+    <area target="" alt="end ride. " title="end ride. " href="home.html" coords="268,2774,1147,2937" shape="rect">
+    <area target="" alt="time travel. developer button." title="time travel. developer button." href="complete_notif.html" coords="482,3089,969,3176" shape="rect">
+</map>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
+	
+</body>
+</html>

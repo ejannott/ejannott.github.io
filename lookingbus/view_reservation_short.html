@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LookingBus App</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png" />
+
+</head>
+<body>
+
+	<img src="img/view_reservation_short.png" usemap="#image-map">
+
+	<map name="image-map">
+	    <area target="" alt="Back to rides" title="Back to rides" href="rides.html" coords="62,69,183,187" shape="rect">
+	    <area target="" alt="Your ride on  A A T A route 4. From Central Campus transit center to Ypsilanti transit center." title="Your ride on  A A T A route 4. From Central Campus transit center to Ypsilanti transit center." href="" coords="40,346,1409,1030" shape="rect">
+	    <area target="" alt="Your ride on route 4 is reserved. Ride is at 6:28 PM today." title="Your ride on route 4 is reserved. Ride is at 6:28 PM today." href="" coords="66,1123,1373,1507" shape="rect">
+	    <area target="" alt="ride information. 24 total bus stops. estimated travel time is 20 minutes. Sara K will be your driver. Tap to show all stops in bus route. " title="ride information. 24 total bus stops. estimated travel time is 20 minutes. Sara K will be your driver. Tap to show all stops in bus route. " href="view_reservation_long.html" coords="84,1719,1223,2241" shape="rect">
+	    <area target="" alt="You'll be reminded 5 minutes prior to the bus arrival. Tap to change." title="You'll be reminded 5 minutes prior to the bus arrival. Tap to change." href="" coords="48,2369,1377,2801" shape="rect">
+	    <area target="" alt="Call transit line" title="Call transit line" href="" coords="96,2978,738,3188" shape="rect">
+	    <area target="" alt="edit this ride" title="edit this ride" href="" coords="837,3045,1177,3121" shape="rect">
+	    <area target="" alt="Time Travel. Developer button." title="Time Travel. Developer button." href="time_to_go.html" coords="470,3295,965,3396" shape="rect">
+	</map>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	$('img[usemap]').imageMap();
+	</script>
+
+	<!-- <script>
+    $(function () {
+        ImageMap('img[usemap]');
+    });
+    function selectRegion(region) {
+        document.querySelector("img").setAttribute('src', 'image-map-' + region + '.png');
+    }
+	</script> -->
+
+	
+</body>
+</html>
