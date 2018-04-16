@@ -13,15 +13,23 @@ img{
 	display:inline;
 }
 
-.image2{
+/*.logo{
 	border: 5px solid blue;
 	height: 50%;
 	width: calc(50%-20%);
 	padding: 5%;
 	display:inline-block;
 }
-
+*/
 .container{
 	width: 100%;
 	margin: 0;
+}
+
+.colleen{
+	width:39%;
+}
+
+.logo {
+	width:39%;
 }

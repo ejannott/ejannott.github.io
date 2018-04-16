@@ -14,8 +14,8 @@
 	</header>
 
 	<div class="container">
-		<img class="colleen" id="hideThis" src="images/examPic.JPG" alt= "Picture of Colleen">
-		<img class="image2" id="stay" src="images/UMSI-logo.jpg" alt= "UMSI logo">
+		<img class="colleen" id="colleen" src="images/examPic.JPG" alt= "Picture of Colleen">
+		<img class="logo" id="logo" src="images/UMSI-logo.jpg" alt= "UMSI logo">
 	</div>
 
 	<br>
@@ -29,19 +29,25 @@
 		function hidePic(){
     		var isClicked = document.getElementById("hide");
       		// console.log(isChecked)
-    		var picture= document.getElementById("hideThis")
+      		var logo = document.getElementById("logo");
+    		var picture= document.getElementById("colleen");
     		if (isClicked){
     			picture.style.display = "none";
-      			console.log("none")
+    			logo.style.margin = "auto";
+    			logo.style.display = "block";
+      			console.log("none");
 			}
 		} 
 
     	function showPic(){
     		var isAgainClicked= document.getElementById("show");
-    		var picture= document.getElementById("hideThis")
+    		var picture= document.getElementById("colleen");
+    		var logo = document.getElementById("logo");
     		if (isAgainClicked){
     			picture.style.display = "inline-block";
-      			console.log("inline-block")
+    			logo.style.display = "inline";
+    			logo.style.margin = 0;
+      			console.log("inline-block");
     		}
 		}
     </script>
