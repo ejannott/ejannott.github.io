@@ -1,0 +1,27 @@
+/*CSS FILE FOR EXAM 2*/
+
+body{
+	background-image: url("../images/bg.png");
+    background-repeat: repeat;
+}
+
+img{
+	border: 5px solid blue;
+	height: 50%;
+	width: calc(50%-20%);
+	padding: 5%;
+	display:inline;
+}
+
+.image2{
+	border: 5px solid blue;
+	height: 50%;
+	width: calc(50%-20%);
+	padding: 5%;
+	display:inline-block;
+}
+
+.container{
+	width: 100%;
+	margin: 0;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>J - Exam 2</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+
+	<header>
+		<h1>Ethan Jannott</h1>
+	</header>
+
+	<div class="container">
+		<img class="colleen" id="hideThis" src="images/examPIC.jpg" alt= "Picture of Colleen">
+		<img class="image2" id="stay" src="images/UMSI-logo.jpg" alt= "UMSI logo">
+	</div>
+
+	<br>
+
+
+	<button type="button" id="hide" onclick="hidePic()">Hide Image</button>
+	<button type="button" id="show" onclick="showPic()">Show Image</button>
+
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript">
+		function hidePic(){
+    		var isClicked = document.getElementById("hide");
+      		// console.log(isChecked)
+    		var picture= document.getElementById("hideThis")
+    		if (isClicked){
+    			picture.style.display = "none";
+      			console.log("none")
+			}
+		} 
+
+    	function showPic(){
+    		var isAgainClicked= document.getElementById("show");
+    		var picture= document.getElementById("hideThis")
+    		if (isAgainClicked){
+    			picture.style.display = "inline-block";
+      			console.log("inline-block")
+    		}
+		}
+    </script>
+	
+	
+</body>
+</html>
