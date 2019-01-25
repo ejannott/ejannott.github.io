@@ -3,3 +3,12 @@ h1.sidebar-heading img{
 	height: auto;
 	width: auto\9; /*--responsiveness for i.e. 8*/
 }
+
+
+#dark {
+	background-color: black;
+	color: white;
+}
+
+
+/*.btn.btn-ghost.pull-left #dark*/
