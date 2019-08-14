@@ -10,5 +10,8 @@ h1.sidebar-heading img{
 	color: white;
 }
 
+.dropshadowimg
+    { box-shadow: 0px 0px 15px #C0C0C0; }
+
 
 /*.btn.btn-ghost.pull-left #dark*/
