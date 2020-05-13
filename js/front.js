@@ -57,16 +57,107 @@ function demo() {
 function carousels() {
 
     $('#main-slider').owlCarousel({
-	navigation: true, // Show next and prev buttons
-	slideSpeed: 300,
+	navigation: false,
+	slideSpeed: 320,
 	paginationSpeed: 400,
 	autoPlay: true,
 	stopOnHover: true,
 	singleItem: true,
 	afterInit: ''
     });
+
+    $('#main-slider2').owlCarousel({
+    navigation: false,
+    slideSpeed: 320,
+    paginationSpeed: 400,
+    autoPlay: true,
+    stopOnHover: true,
+    singleItem: true,
+    afterInit: ''
+    });
+
+    $('#main-slider3').owlCarousel({
+    navigation: false,
+    slideSpeed: 320,
+    paginationSpeed: 400,
+    autoPlay: true,
+    stopOnHover: true,
+    singleItem: true,
+    afterInit: ''
+    });
+
+    $('#main-slider4').owlCarousel({
+    navigation: false,
+    slideSpeed: 320,
+    paginationSpeed: 400,
+    autoPlay: true,
+    stopOnHover: true,
+    singleItem: true,
+    afterInit: ''
+    });
+
+    $('#main-slider5').owlCarousel({
+    navigation: false,
+    slideSpeed: 320,
+    paginationSpeed: 400,
+    autoPlay: true,
+    stopOnHover: true,
+    singleItem: true,
+    afterInit: ''
+    });
+
+    $('#main-slider6').owlCarousel({
+    navigation: false,
+    slideSpeed: 320,
+    paginationSpeed: 400,
+    autoPlay: true,
+    stopOnHover: true,
+    singleItem: true,
+    afterInit: ''
+    });
+
+    $('#main-slider7').owlCarousel({
+    navigation: false,
+    slideSpeed: 320,
+    paginationSpeed: 400,
+    autoPlay: true,
+    stopOnHover: true,
+    singleItem: true,
+    afterInit: ''
+    });
+
+    $('#main-slider8').owlCarousel({
+    navigation: false,
+    slideSpeed: 320,
+    paginationSpeed: 400,
+    autoPlay: true,
+    stopOnHover: true,
+    singleItem: true,
+    afterInit: ''
+    });
+
+    $('#main-slider9').owlCarousel({
+    navigation: false,
+    slideSpeed: 320,
+    paginationSpeed: 400,
+    autoPlay: true,
+    stopOnHover: true,
+    singleItem: true,
+    afterInit: ''
+    });
+
+    $('#main-slider10').owlCarousel({
+    navigation: false,
+    slideSpeed: 320,
+    paginationSpeed: 400,
+    autoPlay: true,
+    stopOnHover: true,
+    singleItem: true,
+    afterInit: ''
+    });
    
 }
+
 
 /* =========================================
  *  masonry
